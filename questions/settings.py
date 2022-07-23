@@ -4,7 +4,7 @@ SURVEY_JS_VERSION = "1.8.2"
 
 SURVEY_JS_CDN = f"https://unpkg.com"
 
-SURVEY_JS_WIDGETS = "surveyjs-widgets.js"
+SURVEY_JS_WIDGETS = f"surveyjs-widgets@{SURVEY_JS_VERSION}/surveyjs-widgets.js"
 
 SURVEY_JS_PLATFORMS = (
     "angular",
