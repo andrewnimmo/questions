@@ -7,7 +7,7 @@ from jinja2 import Environment
 from jinja2 import PackageLoader
 from jinja2 import select_autoescape
 
-from .settings import BOOTSTRAP_URL
+from .settings import BOOTSTRAP_URL, SURVEY_JS_VERSION
 from .settings import SUGGESTED_JS_BY_PLATFORM
 from .settings import SURVEY_JS_CDN
 
@@ -45,7 +45,7 @@ def get_platform_js_resources(
     :Returns:
         The list of resource URLs.
     """
-    survey_js = f"{resource_url}/survey.{platform}.min.js"
+    survey_js = f"{resource_url}/survey-{platform}@{SURVEY_JS_VERSION}/survey.{platform}.min.js"
     platform_js = []
     for js in SUGGESTED_JS_BY_PLATFORM[platform]:
         if resource_url == SURVEY_JS_CDN:
@@ -80,7 +80,7 @@ def get_theme_css_resources(
     name = "survey"
     if theme == "modern":
         name = "modern"
-    return [f"{resource_url}/{name}.css"]
+    return [f"{resource_url}/survey-core@{SURVEY_JS_VERSION}/{name}.css"]
 
 
 def get_survey_js(

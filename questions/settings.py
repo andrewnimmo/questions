@@ -2,7 +2,7 @@
 
 SURVEY_JS_VERSION = "1.8.2"
 
-SURVEY_JS_CDN = f"https://surveyjs.azureedge.net/{SURVEY_JS_VERSION}"
+SURVEY_JS_CDN = f"https://unpkg.com"
 
 SURVEY_JS_WIDGETS = "surveyjs-widgets.js"
 
