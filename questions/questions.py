@@ -90,7 +90,7 @@ class RegexValidator(Validator):
 class ExpressionValidator(Validator):
     """Checks if a question's answer matches a set of conditions."""
 
-    kind: str = "regex"
+    kind: str = "expression"
     expression: str = ""
 
 
