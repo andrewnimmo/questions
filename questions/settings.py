@@ -202,6 +202,7 @@ INCLUDE_KEYS = {
                     "show_title": ...,
                     "show_values": ...,
                     "size": ...,
+                    "start": ...,
                     "start_date": ...,
                     "start_with_new_line": ...,
                     "state": ...,
