@@ -511,6 +511,7 @@ class NoUISliderQuestion(Question):
     """
 
     kind: str = "nouislider"
+    start: int = 0
     step: int = 1
     range_min: int = 0
     range_max: int = 100
@@ -523,11 +524,11 @@ class NoUISliderQuestion(Question):
     tooltips: bool = True
     extra_js: List[HttpUrl] = [
         "https://unpkg.com/jquery@3.5.1/dist/jquery.js",
-        "https://unpkg.com/nouislider@9.2.0/distribute/nouislider.js",
+        "https://unpkg.com/nouislider@15.6.1/dist/nouislider.js",
         "https://unpkg.com/wnumb@1.1.0",
     ]
     extra_css: List[HttpUrl] = [
-        "https://unpkg.com/nouislider@9.2.0/distribute/nouislider.min.css",
+        "https://unpkg.com/nouislider@15.6.1/dist/nouislider.min.css",
     ]
 
 
