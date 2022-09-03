@@ -523,11 +523,11 @@ class NoUISliderQuestion(Question):
     tooltips: bool = True
     extra_js: List[HttpUrl] = [
         "https://unpkg.com/jquery@3.5.1/dist/jquery.js",
-        "https://unpkg.com/nouislider@12.1.0/distribute/nouislider.js",
+        "https://unpkg.com/nouislider@10.1.0/distribute/nouislider.js",
         "https://unpkg.com/wnumb@1.1.0",
     ]
     extra_css: List[HttpUrl] = [
-        "https://unpkg.com/nouislider@12.1.0/distribute/nouislider.min.css",
+        "https://unpkg.com/nouislider@10.1.0/distribute/nouislider.min.css",
     ]
 
 
